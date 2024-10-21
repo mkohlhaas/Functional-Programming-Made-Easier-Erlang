@@ -1,6 +1,13 @@
 { name = "my-project"
-, dependencies = [ "console", "effect", "maybe", "prelude" ]
+, dependencies =
+  [ "console"
+  , "effect"
+  , "foldable-traversable"
+  , "lists"
+  , "nonempty"
+  , "prelude"
+  ]
 , packages = ./packages.dhall
-, sources = [ "src/**/*.purs", "test/**/*.purs" ]
+, sources = [ "src/**/*.purs" ]
 , backend = "purerl"
 }
